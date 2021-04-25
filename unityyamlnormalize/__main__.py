@@ -9,7 +9,6 @@ class UnityYaml:
         pass
 
     def normalize(self, input, output):
-        print(input)
         doc = UnityDocument.load_yaml(input)
         for entry in doc.entries:
             entry.__dict__ = dict(sorted(entry.__dict__.items()))

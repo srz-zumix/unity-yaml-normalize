@@ -1,5 +1,5 @@
 __author__ = 'srz_zumix'
-__version__ = '0.1.0'
+__version__ = '0.1.1'
 
 __copyright__ = '2021 %s ' % __author__
 __license__ = """
