@@ -3,8 +3,8 @@
 [![PyPI version](https://badge.fury.io/py/unity-yaml-normalize.svg)](https://badge.fury.io/py/unity-yaml-normalize)
 [![Python Versions](https://img.shields.io/pypi/pyversions/wandbox_api.svg)](https://pypi.org/project/unity-yaml-normalize/)
 
-Normalize and overwrite Unity YAML files(onfigurations, prefabs, scenes, serialized data, etc) entries.
-Implemented by [unity-yaml-parser](https://github.com/socialpoint-labs/unity-yaml-parser), thx!
+Normalize and overwrite Unity YAML files(onfigurations, prefabs, scenes, serialized data, etc) entries.  
+Implemented by [unity-yaml-parser](https://github.com/socialpoint-labs/unity-yaml-parser). thanks!
 
 * Sort entries member
 * Normalize negative zero.
