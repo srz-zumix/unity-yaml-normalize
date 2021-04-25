@@ -12,6 +12,9 @@ install-test-deps: ## install test dependencies
 test: install ## commands test
 	unity-yaml-normalize sample/SampleScene.unity -o tmp/SampleScene.unity
 
+one:
+	python -c "import sys; from unityparser import UnityDocument; doc = UnityDocument.load_yaml(sys.argv[1]); [(d := dict(sorted(x.__dict__.items())), x.__dict__.clear(), x.__dict__.update(d)) for x in doc.entries]; doc.dump_yaml(sys.argv[2]);" sample/SampleScene.unity tmp/SampleScene.unity
+
 pytest: ## python test
 	python setup.py test
 
