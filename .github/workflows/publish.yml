@@ -4,11 +4,17 @@ on:
     tags:
       - v*
 
+permissions: {}
+
 jobs:
   pypi:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
     steps:
-    - uses: actions/checkout@master
+    - uses: actions/checkout@v6
+      with:
+        persist-credentials: false
     - name: Set up Python 3.7
       uses: actions/setup-python@v1
       with:

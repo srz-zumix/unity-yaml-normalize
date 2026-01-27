@@ -1,20 +1,44 @@
-name: Compile each language tests
+name: Test
 on:
   pull_request:
   push:
     branches:
-      - master
+      - main
+
+permissions: {}
 
 jobs:
-  test:
-    runs-on: ubuntu-18.04
+  setup-test:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    strategy:
+      matrix:
+        python-version: [3.7, 3.8, 3.9]
+    steps:
+    - uses: actions/checkout@v6
+      with:
+        persist-credentials: false
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v2
+      with:
+        python-version: ${{ matrix.python-version }}
+    - name: test
+      run: python setup.py test
+
+  alpine-test:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
     container:
       image: python:3.8-alpine
       credentials:
         username: ${{ secrets.DOCKERHUB_USERNAME }}
         password: ${{ secrets.DOCKERHUB_TOKEN }}
     steps:
-    - uses: actions/checkout@master
+    - uses: actions/checkout@v6
+      with:
+        persist-credentials: false
     - name: setup
       run: |
         apk add make
