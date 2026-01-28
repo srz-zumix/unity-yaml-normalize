@@ -32,7 +32,6 @@ setup(
     , classifiers = [
         "Development Status :: 4 - Beta"
         , "Topic :: Utilities"
-        , "License :: OSI Approved :: MIT License"
         , "Programming Language :: Python"
         , "Programming Language :: Python :: 3.7"
         , "Programming Language :: Python :: 3.8"
@@ -44,8 +43,6 @@ setup(
         ]
     }
     , install_requires=['unityparser']
-    , tests_require=test_deps
-    , test_suite="tests.test_suite"
     , extras_require={
         'test': test_deps
     }
