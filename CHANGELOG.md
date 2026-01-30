@@ -1,5 +1,8 @@
 # Changelog
 
+## [v0.1.3](https://github.com/srz-zumix/unity-yaml-normalize/compare/v0.1.2...v0.1.3) - 2026-01-30
+- publish by @srz-zumix in https://github.com/srz-zumix/unity-yaml-normalize/pull/10
+
 ## [v0.1.2](https://github.com/srz-zumix/unity-yaml-normalize/compare/v0.1.1...v0.1.2) - 2026-01-28
 - Add Dependabot configuration for updates by @srz-zumix in https://github.com/srz-zumix/unity-yaml-normalize/pull/1
 - Delete .github/workflows/greetings.yml by @srz-zumix in https://github.com/srz-zumix/unity-yaml-normalize/pull/4
