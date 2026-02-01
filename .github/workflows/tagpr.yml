@@ -28,6 +28,9 @@ jobs:
     if: needs.tagpr.outputs.tag != ''
     permissions:
       contents: read
+    environment:
+      name: pypi
+      url: https://pypi.org/p/unityyamlnormalize
     uses: ./.github/workflows/publish.yml
     with:
       tag: ${{ needs.tagpr.outputs.tag }}
