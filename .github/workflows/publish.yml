@@ -16,25 +16,22 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: read
+      id-token: write  # Trusted Publisher に必要
+    environment:
+      name: pypi
+      url: https://pypi.org/p/unityyamlnormalize
     steps:
     - uses: actions/checkout@v6
       with:
         persist-credentials: false
         ref: ${{ inputs.tag || github.ref }}
     - name: Set up Python
-      uses: actions/setup-python@v1
+      uses: actions/setup-python@v5
       with:
         python-version: "3.11"
-    - name: Init .pypirc
-      env:
-        PYPI_USERNAME: __token__
-        PYPI_PASSWORD: ${{ secrets.PYPI_PASSWORD }}
-      run: |
-        echo -e '[pypi]' >> ~/.pypirc
-        echo -e "username = ${PYPI_USERNAME}" >> ~/.pypirc
-        echo -e "password = ${PYPI_PASSWORD}" >> ~/.pypirc
-    - name: Publish
-      run: |
-        pip install twine wheel
-        python setup.py sdist bdist_wheel
-        twine upload --repository pypi dist/*
+    - name: Install build dependencies
+      run: pip install build
+    - name: Build package
+      run: python -m build
+    - name: Publish to PyPI
+      uses: pypa/gh-action-pypi-publish@release/v1
