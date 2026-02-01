@@ -1,5 +1,11 @@
 # Changelog
 
+## [v0.1.4](https://github.com/srz-zumix/unity-yaml-normalize/compare/v0.1.3...v0.1.4) - 2026-02-01
+- Bump actions/setup-python from 1 to 6 by @dependabot[bot] in https://github.com/srz-zumix/unity-yaml-normalize/pull/12
+- update publish by @srz-zumix in https://github.com/srz-zumix/unity-yaml-normalize/pull/14
+- Add environment configuration for PyPI deployment by @srz-zumix in https://github.com/srz-zumix/unity-yaml-normalize/pull/15
+- Update permissions for pypi workflow by @srz-zumix in https://github.com/srz-zumix/unity-yaml-normalize/pull/16
+
 ## [v0.1.3](https://github.com/srz-zumix/unity-yaml-normalize/compare/v0.1.2...v0.1.3) - 2026-01-30
 - publish by @srz-zumix in https://github.com/srz-zumix/unity-yaml-normalize/pull/10
 
