@@ -29,7 +29,23 @@ jobs:
     permissions:
       contents: read
       id-token: write
-    uses: ./.github/workflows/publish.yml
-    with:
-      tag: ${{ needs.tagpr.outputs.tag }}
+    runs-on: ubuntu-latest
+    environment:
+      name: pypi
+      url: https://pypi.org/p/unityyamlnormalize
+    steps:
+    - uses: actions/checkout@v6
+      with:
+        persist-credentials: false
+        ref: ${{ needs.tagpr.outputs.tag }}
+    - name: Set up Python
+      uses: actions/setup-python@v6
+      with:
+        python-version: "3.11"
+    - name: Install build dependencies
+      run: pip install build
+    - name: Build package
+      run: python -m build
+    - name: Publish to PyPI
+      uses: pypa/gh-action-pypi-publish@release/v1
     
