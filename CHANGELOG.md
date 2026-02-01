@@ -4,6 +4,10 @@
 - fix publish workflow by @srz-zumix in https://github.com/srz-zumix/unity-yaml-normalize/pull/19
 - Clean up CHANGELOG by removing duplicates by @srz-zumix in https://github.com/srz-zumix/unity-yaml-normalize/pull/20
 
+## [v0.1.5](https://github.com/srz-zumix/unity-yaml-normalize/compare/v0.1.4...v0.1.5) - 2026-02-01
+- fix publish workflow by @srz-zumix in https://github.com/srz-zumix/unity-yaml-normalize/pull/19
+- Clean up CHANGELOG by removing duplicates by @srz-zumix in https://github.com/srz-zumix/unity-yaml-normalize/pull/20
+
 ## [v0.1.4](https://github.com/srz-zumix/unity-yaml-normalize/compare/v0.1.3...v0.1.4) - 2026-02-01
 - Bump actions/setup-python from 1 to 6 by @dependabot[bot] in https://github.com/srz-zumix/unity-yaml-normalize/pull/12
 - update publish by @srz-zumix in https://github.com/srz-zumix/unity-yaml-normalize/pull/14
