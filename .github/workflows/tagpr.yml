@@ -15,6 +15,9 @@ jobs:
     outputs:
       tag: ${{ steps.tagpr.outputs.tag }}
     steps:
+    # https://github.com/srz-zumix/unity-yaml-normalize/issues/23
+    - run: |
+        sleep 30
     - uses: actions/checkout@v6
       with:
         persist-credentials: false
