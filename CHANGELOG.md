@@ -1,5 +1,8 @@
 # Changelog
 
+## [v0.1.6](https://github.com/srz-zumix/unity-yaml-normalize/compare/v0.1.5...v0.1.6) - 2026-02-07
+- Add sleep command to tagpr workflow by @srz-zumix in https://github.com/srz-zumix/unity-yaml-normalize/pull/24
+
 ## [v0.1.5](https://github.com/srz-zumix/unity-yaml-normalize/compare/v0.1.4...v0.1.5) - 2026-02-01
 - fix publish workflow by @srz-zumix in https://github.com/srz-zumix/unity-yaml-normalize/pull/19
 - Clean up CHANGELOG by removing duplicates by @srz-zumix in https://github.com/srz-zumix/unity-yaml-normalize/pull/20
