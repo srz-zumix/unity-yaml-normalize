@@ -1,5 +1,18 @@
 # Changelog
 
+## [v0.1.6](https://github.com/srz-zumix/unity-yaml-normalize/compare/v0.1.5...v0.1.6) - 2026-07-08
+
+- Add sleep command to tagpr workflow by @srz-zumix in https://github.com/srz-zumix/unity-yaml-normalize/pull/24
+- Bump Songmu/tagpr from 1.11.1 to 1.15.0 in the actions-minor group by @dependabot[bot] in https://github.com/srz-zumix/unity-yaml-normalize/pull/26
+- Update package versions in aqua.yaml by @srz-zumix in https://github.com/srz-zumix/unity-yaml-normalize/pull/27
+- Bump Songmu/tagpr from 1.15.0 to 1.17.1 in the actions-minor group by @dependabot[bot] in https://github.com/srz-zumix/unity-yaml-normalize/pull/28
+- Bump Songmu/tagpr from 1.17.1 to 1.18.1 in the actions-minor group by @dependabot[bot] in https://github.com/srz-zumix/unity-yaml-normalize/pull/29
+- Bump Songmu/tagpr from 1.18.1 to 1.18.3 in the actions-minor group by @dependabot[bot] in https://github.com/srz-zumix/unity-yaml-normalize/pull/30
+- Bump Songmu/tagpr from 1.18.3 to 1.19.0 in the actions-minor group by @dependabot[bot] in https://github.com/srz-zumix/unity-yaml-normalize/pull/31
+- Bump Songmu/tagpr from 1.19.0 to 1.20.0 in the actions-minor group across 1 directory by @dependabot[bot] in https://github.com/srz-zumix/unity-yaml-normalize/pull/33
+- Update dependabot.yml by @srz-zumix in https://github.com/srz-zumix/unity-yaml-normalize/pull/35
+- Bump actions/checkout from 6 to 7 by @dependabot[bot] in https://github.com/srz-zumix/unity-yaml-normalize/pull/36
+
 ## [v0.1.5](https://github.com/srz-zumix/unity-yaml-normalize/compare/v0.1.4...v0.1.5) - 2026-02-01
 - fix publish workflow by @srz-zumix in https://github.com/srz-zumix/unity-yaml-normalize/pull/19
 - Clean up CHANGELOG by removing duplicates by @srz-zumix in https://github.com/srz-zumix/unity-yaml-normalize/pull/20
